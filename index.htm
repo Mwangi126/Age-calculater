@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Age Calculator</h1>
+        
+        <!-- Introductory Text -->
+        <p class="intro">
+            This age calculator helps you determine your exact age in years, months, days, hours, minutes, and seconds. 
+            Additionally, it shows how many days, weeks, and hours have passed since your birth and provides a real-time countdown 
+            until your next birthday. This is perfect for anyone curious about their age in detail or who wants a personalized countdown for their next celebration!
+        </p>
+
+        <!-- Instructions Section -->
+        <h2>How to Use the Age Calculator</h2>
+        <ol class="instructions">
+            <li>Enter your birth date in the provided <strong>Date</strong> field.</li>
+            <li>If you know your exact birth time, enter it in the <strong>Time</strong> field (optional, for more precision).</li>
+            <li>Click the <strong>Calculate Age</strong> button to view your detailed age information and the next birthday countdown.</li>
+            <li>If you want to reset and enter new data, click the <strong>Reset</strong> button.</li>
+            <li>Switch between light and dark mode by clicking <strong>Toggle Dark Mode</strong> for a comfortable viewing experience.</li>
+        </ol>
+
+        <input type="date" id="birthdate" placeholder="Enter your birthdate">
+        <input type="time" id="birthtime" placeholder="Enter your birth time">
+        <button onclick="calculateAge()">Calculate Age</button>
+        <button onclick="resetCalculator()">Reset</button>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+        <!-- Result Display -->
+        <div class="results">
+            <p id="result"></p>
+            <p id="daysSince"></p>
+            <p id="weeksSince"></p>
+            <p id="hoursSince"></p>
+            <p id="nextBirthday"></p>
+        </div>
+
+        <!-- Additional Information Section -->
+        <h2>About the Results</h2>
+        <p class="info">
+            <strong>Your Age:</strong> Displays your age in detail, breaking it down into years, months, days, hours, minutes, and seconds.
+        </p>
+        <p class="info">
+            <strong>Days, Weeks, and Hours Since Birth:</strong> Tracks the exact amount of time that has passed since you were born. 
+            This feature is great for anyone interested in milestone tracking, such as hitting 10,000 days or 1 million hours!
+        </p>
+        <p class="info">
+            <strong>Time Until Next Birthday:</strong> Provides a countdown to your next birthday, updating in real-time. It counts down 
+            in days, hours, minutes, and seconds, letting you know exactly how long until your next celebration.
+        </p>
+    </div>
+    <script src="j.js"></script>
+</body>
+</html>
